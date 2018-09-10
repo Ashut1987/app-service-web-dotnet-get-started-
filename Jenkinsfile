@@ -1,5 +1,3 @@
-
-
 #!groovy
 
 SONAR_BRANCH='master'

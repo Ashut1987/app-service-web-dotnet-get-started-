@@ -33,7 +33,7 @@ stage 'deployment'
 
 //powershell 'Publish-AzureWebsiteProject -Name "nagarrowebdemo" -Package "C:/jenkins/workspace/Nagarrodemo/aspnet-get-started/bin/Release/PublishOutPut" '
 
-bat ' terraform.exe "C:/jenkins/clouddrive/deploy/deploy.tf"'
+bat 'C:/jenkins/terraform_0.11.8_windows_amd64/terraform.exe "C:/jenkins/clouddrive/deploy/deploy.tf"'
 bat 'terraform init'
 bat 'terraform plan'
 bat 'terraform apply'

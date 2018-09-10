@@ -30,4 +30,5 @@ $PropertiesObject = @{
 }
 
 #Deployment
-Publish-AzureWebsiteProject -Name nagarroapp -ProjectFile .\aspnet-get-started.csproj -Configuration Debug 
+Import-AzurePublishSettingsFile 'D:\demo\app-service-web-dotnet-get-started\Windows Azure MSDN - 9_10_2018, 13_03_24 - credentials.publishsettings'
+Publish-AzureWebsiteProject -Name nagarroapp -ProjectFile "D:\Demo\app-service-web-dotnet-get-started\aspnet-get-started\aspnet-get-started.csproj" -Configuration Debug

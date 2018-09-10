@@ -21,7 +21,8 @@ stage 'Checkout'
 
          checkout scm
 		 
-
+stage 'Restore'
+bat 'C:/jenkins/nuget.exe restore aspnet-get-started.sln'
 stage 'Build and code analysis'
 
 //SonarAnalysis()
